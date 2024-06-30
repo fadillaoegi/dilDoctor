@@ -1,14 +1,25 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import { Button, StyleSheet, Text, View } from "react-native";
+import React from "react";
 
 const ButtonApps = () => {
   return (
-    <View>
-      <Text>Button Apps Custom</Text>
+    <View style={styles.container}>
+      <Button
+        title="Click Me"
+        color="red"
+        onPress={() => alert("Button Pressed")}
+      />
     </View>
-  )
-}
+  );
+};
 
-export default ButtonApps
+export default ButtonApps;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#fff",
+  },
+});
