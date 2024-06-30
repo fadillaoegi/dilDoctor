@@ -1,10 +1,10 @@
 import React from "react";
 import { View } from "react-native";
 
-const Splash = () => {
+const SplashScreen = () => {
   return (
     <View></View>
   );
 };
 
-export default Splash;
+export default SplashScreen;
