@@ -1,14 +1,15 @@
 import React from "react";
 import { ImageBackground, Text, View, StyleSheet } from "react-native";
 import { bg } from "./assets/";
+import { SplashScreen } from "expo-router";
 
 export default function Index() {
   return (
-    <ImageBackground source={bg} style={styles.background} resizeMode="cover">
-      <View style={styles.container}>
-        <Text style={styles.text}>Edit app/index.tsx to edit this screen.</Text>
-      </View>
-    </ImageBackground>
+    // <ImageBackground source={bg} style={styles.background} resizeMode="cover">
+    <View style={styles.container}>
+      <Text style={styles.text}>Edit app/index.tsx to edit this screen.</Text>
+    </View>
+    // </ImageBackground>
   );
 }
 

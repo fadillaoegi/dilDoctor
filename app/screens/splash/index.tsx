@@ -1,9 +1,14 @@
 import React from "react";
-import { View } from "react-native";
+import { ImageBackground, View, Text } from "react-native";
+import { bg } from "../../assets";
 
 const SplashScreen = () => {
   return (
-    <View></View>
+    <ImageBackground source={bg} resizeMode="cover">
+      <View>
+        <Text>Edit app/index.tsx to edit this screen.</Text>
+      </View>
+    </ImageBackground>
   );
 };
 
