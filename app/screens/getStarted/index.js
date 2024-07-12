@@ -2,9 +2,10 @@ import React from "react";
 import { View, Text, ImageBackground, StyleSheet, Button } from "react-native";
 import { bgImg, logoImg } from "@/app/assets/images";
 import { ImgApps, BtnApps, Spacing } from "@/app/components";
-// import { ColorApps } from "../../utils";
+import { useNavigation } from "@react-navigation/native";
 
 const GetStartedScreen = () => {
+  const navigation = useNavigation();
   return (
     <ImageBackground source={bgImg} style={Styles.container}>
       <View style={Styles.container}>
@@ -16,9 +17,16 @@ const GetStartedScreen = () => {
           </Text>
         </View>
         <View>
-          <BtnApps type={"btn-primary"} onPress={{}} title="Get Started" />
+          <BtnApps
+            type={"btn-primary"}
+            onPress={() => navigation.navigate("SignUpScreen")}
+            title="Get Started"
+          />
           <Spacing />
-          <BtnApps onPress={{}} title="Sign In" />
+          <BtnApps
+            onPress={() => navigation.navigate("SignInScreen")}
+            title="Sign In"
+          />
         </View>
       </View>
     </ImageBackground>

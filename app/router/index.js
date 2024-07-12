@@ -3,7 +3,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import SplashScreen from "../screens/splash";
 import GetStaredScreen from "../screens/getStarted";
 import SignInSCreen from "../screens/signIn";
-import SignUpSCreen from "../screens/signUp";
+import SignUpScreen from "../screens/signUp";
 import HomeScreen from "../screens/home";
 
 export default function RootLayout() {
@@ -27,8 +27,8 @@ export default function RootLayout() {
           options={{ headerShown: false }}
         />
         <Stack.Screen
-          name="SignUpSCreen"
-          component={SignUpSCreen}
+          name="SignUpScreen"
+          component={SignUpScreen}
           options={{ headerShown: false }}
         />
         <Stack.Screen

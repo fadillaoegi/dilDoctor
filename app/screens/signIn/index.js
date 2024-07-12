@@ -1,12 +1,30 @@
-import { View, Text } from "react-native";
+import { View, Text, ScrollView, StyleSheet } from "react-native";
 import React from "react";
+import { ImgApps, Spacing } from "@/app/components";
+import { logoImg } from "@/app/assets/images";
 
-const SignInSCreen = () => {
+const SignInScreen = () => {
   return (
-    <View>
-      <Text>SignInSCreen</Text>
-    </View>
+    <ScrollView>
+      <View style={Styles.container}>
+        <ImgApps imgSrc={logoImg} />
+        <Spacing height={40} />
+        <Text>Masuk dan mulai{"\n"}berkonsultasi</Text>
+      </View>
+    </ScrollView>
   );
 };
 
-export default SignInSCreen;
+export default SignInScreen;
+
+const Styles = StyleSheet.create({
+  container: {
+    width: "auto",
+    height: "auto",
+    padding: 40,
+    backgroundColor: "#ffffff",
+  },
+  title: {
+    color: ""
+  }
+});
