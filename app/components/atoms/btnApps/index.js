@@ -1,11 +1,11 @@
 import { View, Text, TouchableNativeFeedback, StyleSheet } from "react-native";
 import React from "react";
 
-const BtnApps = ({ type, onPress, title = "test" }) => {
+const BtnApps = ({ type, onPress, title = "Click" }) => {
   return (
     <TouchableNativeFeedback onPress={onPress}>
       <View style={Styles.container(type)}>
-        <Text>{title}</Text>
+        <Text style={Styles.fonts(type)}>{title}</Text>
       </View>
     </TouchableNativeFeedback>
   );
@@ -20,4 +20,14 @@ const Styles = StyleSheet.create({
     alignItems: "center",
     borderRadius: 5,
   }),
+  fonts: (type) => ({
+    color: type === "btn-primary" ? "#FFFFFF" : "#112340",
+    fontWeight: "semibold",
+    fontSize: 18,
+  }),
+  //   fonts: (type) => ({
+  //     fontSize: 18,
+  //     fontWeight: "semibold",
+  //     colo,
+  //   }),
 });
