@@ -9,7 +9,7 @@ const SignInScreen = () => {
       <View style={Styles.container}>
         <ImgApps imgSrc={logoImg} />
         <Spacing height={40} />
-        <Text>Masuk dan mulai{"\n"}berkonsultasi</Text>
+        <Text style={Styles.title}>Masuk dan mulai{"\n"}berkonsultasi</Text>
       </View>
     </ScrollView>
   );
@@ -19,12 +19,16 @@ export default SignInScreen;
 
 const Styles = StyleSheet.create({
   container: {
-    width: "auto",
-    height: "auto",
+    width: "100%",
+    height: "100%",
+    flex: 1,
     padding: 40,
-    backgroundColor: "#ffffff",
+    backgroundColor: "white",
   },
   title: {
-    color: ""
-  }
+    color: "",
+    fontSize: 20.0,
+    fontFamily: "nunito",
+    fontWeight: "400",
+  },
 });
